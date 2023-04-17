@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class WsbRestHomeworkApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(WsbRestHomeworkApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(WsbRestHomeworkApplication.class, args);
+    }
 
 }
