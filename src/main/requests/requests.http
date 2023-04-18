@@ -1,0 +1,35 @@
+### Get all articles
+GET http://localhost:8080/articles
+
+### Get a specific article
+GET http://localhost:8080/articles/1
+
+### Try to get an article that does not exist
+GET http://localhost:8080/articles/1234
+
+### Post a new article
+POST http://localhost:8080/articles
+Content-Type: application/json
+
+{
+  "author": null,
+  "title": "Kot czy pies, i dlaczego kot",
+  "content": "Odwieczne pytanie, na które odpowiedzi nie zna nikt. Poza mną. Nigdy nie byłem z kotem na spacerze w deszczu i gradzie."
+}
+
+### Try to post an empty article
+POST http://localhost:8080/articles
+Content-Type: application/json
+
+### Update article data
+PUT http://localhost:8080/articles/4
+Content-Type: application/json
+
+{
+  "author": "Grzegorz Hiacynt",
+  "title": "Kot czy pies, i dlaczego kot",
+  "content": "Odwieczne pytanie, na które odpowiedzi nie zna nikt. Poza mną. Nigdy nie byłem z kotem na spacerze w deszczu i gradzie."
+}
+
+### Remove an article
+DELETE http://localhost:8080/articles/1

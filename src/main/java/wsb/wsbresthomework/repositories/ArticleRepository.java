@@ -30,6 +30,7 @@ public class ArticleRepository {
 
     public Article save(Article article) {
         article.setId(currentId + 1);
+        currentId++;
         articles.add(article);
         return article;
     }
